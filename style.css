@@ -1,7 +1,7 @@
 header .menu {
   justify-content: space-between;
   align-items: center;
-  padding: 0 8%;
+  padding: 0 10%;
   position: fixed;
   z-index: 1;
   width: 100%;
@@ -17,10 +17,13 @@ header .menu .icon {
   display: inline-block;
   width: 14px;
 }
+header .menu nav #about {
+  position: relative;
+}
 header .menu nav a {
   color: #000000;
   font-weight: 300;
-  margin-left: 30px;
+  margin-left: 40px;
   letter-spacing: 1px;
   transition: 0.2s;
 }
@@ -29,15 +32,43 @@ header .menu nav a:hover {
   color: #a5b0af;
 }
 header .menu nav .about {
+  display: none;
   position: absolute;
-  top: 102%;
-  right: 19%;
+  top: 86%;
+  left: 15%;
   width: 200px;
   background-color: #ffffff;
+  transition: 0.7s;
 }
 header .menu nav .about a {
   font-size: 20px;
-  margin: 10px 40px 15px 20px;
+  margin-left: 15px;
+}
+header .menu nav .about ul li {
+  padding: 10px 40px 15px 5px;
+}
+header .menu nav li {
+  padding: 40px 0;
+  display: inline-block;
+}
+header .menu nav #about:hover .about {
+  display: flex;
+}
+@media (min-width: 1200px) {
+  header .btn {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  header nav {
+    display: none;
+  }
+  header .btn {
+    display: block;
+  }
+  header .btn .icon {
+    font-size: 24px;
+  }
 }
 
 body {
