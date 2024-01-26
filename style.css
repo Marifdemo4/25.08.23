@@ -84,7 +84,6 @@ body .imgbox img {
 }
 
 #carefor {
-  padding-bottom: 50px;
   background-color: #f8f9fa;
 }
 #carefor .textbox {
@@ -104,8 +103,9 @@ body .imgbox img {
   line-height: 28px;
 }
 #carefor .imgbox {
+  overflow: hidden;
   min-width: 450px;
-  height: 620px;
+  height: 100%;
 }
 @media (max-width: 992px) {
   #carefor .imgbox {
@@ -129,6 +129,7 @@ body .imgbox img {
   }
   #carefor .textbox h1 {
     width: 100%;
+    padding-top: 100px;
   }
   #carefor .textbox h3 {
     padding: 0 50px;
