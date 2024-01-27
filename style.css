@@ -139,42 +139,80 @@ body .imgbox img {
 #welcome {
   padding: 40px 0;
 }
-#welcome h1 {
+#welcome .mainbox .textbox {
+  width: 580px;
+}
+#welcome .mainbox .textbox h1 {
   font-weight: 700;
   font-size: 30px;
   margin: 15px 0;
 }
-#welcome h3 {
+#welcome .mainbox .textbox h3 {
   color: #868686;
   margin: 20px 0 40px;
   font-size: 20px;
 }
-#welcome .textbox {
-  padding: 80px;
+#welcome .box .textbox, #welcome .box .textbox-2 {
+  width: 44%;
 }
-#welcome .textbox h2, #welcome .textbox h6 {
+#welcome .box .textbox h2, #welcome .box .textbox h6, #welcome .box .textbox-2 h2, #welcome .box .textbox-2 h6 {
   margin: 15px 0;
 }
-#welcome .textbox h2 {
-  font-size: 33px;
+#welcome .box .textbox h2, #welcome .box .textbox-2 h2 {
+  font-size: 40px;
 }
-#welcome .textbox h6 {
-  font-size: 18px;
+#welcome .box .textbox h6, #welcome .box .textbox-2 h6 {
+  font-size: 20px;
+  color: #80829c;
+  line-height: 1.4;
 }
-#welcome .textbox .btn {
+#welcome .box .textbox .btn, #welcome .box .textbox-2 .btn {
   padding: 10px 30px;
   border-radius: 20px;
   background-color: #a7b59f;
   color: white;
 }
-#welcome .wid {
-  width: 580px;
+#welcome .box .textbox {
+  padding-right: 100px;
+}
+#welcome .box .textbox-2 {
+  padding-left: 100px;
 }
 #welcome .bigicon {
   font-size: 30px;
 }
 #welcome .bigicon i {
   color: #d4cece;
+}
+@media (min-width: 1200px) {
+  #welcome .box .imgbox {
+    width: 540px;
+    height: 360px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  #welcome .box .imgbox {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #welcome .box {
+    padding: 50px 0;
+  }
+  #welcome .box .imgbox {
+    width: 690px;
+    height: 460px;
+  }
+  #welcome .box .textbox {
+    width: 100%;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  #welcome .box .imgbox {
+    max-width: 510px;
+    max-height: 340px;
+  }
 }
 
 #aboutus {
