@@ -172,11 +172,22 @@ body .imgbox img {
   background-color: #a7b59f;
   color: white;
 }
+#welcome .box .textbox .btn h5, #welcome .box .textbox-2 .btn h5 {
+  cursor: pointer;
+}
 #welcome .box .textbox {
   padding-right: 100px;
 }
 #welcome .box .textbox-2 {
   padding-left: 100px;
+}
+#welcome .box .imgbox {
+  cursor: pointer;
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+#welcome .box .imgbox:hover {
+  box-shadow: 12px 12px #a2c0be;
 }
 #welcome .bigicon {
   font-size: 30px;
