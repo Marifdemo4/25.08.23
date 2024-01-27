@@ -13,7 +13,7 @@
                 font-size: 20px
     .box
         .textbox,.textbox-2
-            width: 44%
+            width: 50%
             h2,h6
                 margin: 15px 0
             h2
@@ -29,12 +29,7 @@
                 color: #ffff
                 h5
                     cursor: pointer
-        .textbox
-            padding-right: 100px
-        .textbox-2
-            padding-left: 100px
         .imgbox
-            cursor: pointer
             transition: 0.3s
             transition-delay: 0.2s
             &:hover
@@ -43,7 +38,11 @@
         font-size: 30px
         i
             color: #d4cece
-            
+
+    @media (min-width: 1400px)
+        .box
+            .textbox,.textbox-2
+                width: 44%        
     @media (min-width: 1200px)
         .box
             .imgbox
@@ -56,14 +55,30 @@
                 height: 300px
     @media (min-width: 768px) and (max-width: 991px)
         .box
-            padding: 50px 0
             .imgbox
                 width: 690px
                 height: 460px
-            .textbox
+            .textbox,.textbox-2
                 width: 100%
     @media (min-width: 576px) and (max-width: 768px)
         .box
             .imgbox
                 max-width: 510px
-                max-height: 340px            
+                max-height: 340px   
+            .textbox,.textbox-2
+                width: 100%
+   
+    @media (min-width: 992px)
+        .box
+            .textbox
+                padding-right: 100px
+            .textbox-2
+                padding-left: 100px   
+    @media (max-width: 992px)
+        .box
+            padding: 30px 0 
+    @media (max-width: 576px)
+        .box
+            .textbox,.textbox-2
+                width: 100%
+

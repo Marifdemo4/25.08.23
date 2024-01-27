@@ -153,7 +153,7 @@ body .imgbox img {
   font-size: 20px;
 }
 #welcome .box .textbox, #welcome .box .textbox-2 {
-  width: 44%;
+  width: 50%;
 }
 #welcome .box .textbox h2, #welcome .box .textbox h6, #welcome .box .textbox-2 h2, #welcome .box .textbox-2 h6 {
   margin: 15px 0;
@@ -175,14 +175,7 @@ body .imgbox img {
 #welcome .box .textbox .btn h5, #welcome .box .textbox-2 .btn h5 {
   cursor: pointer;
 }
-#welcome .box .textbox {
-  padding-right: 100px;
-}
-#welcome .box .textbox-2 {
-  padding-left: 100px;
-}
 #welcome .box .imgbox {
-  cursor: pointer;
   transition: 0.3s;
   transition-delay: 0.2s;
 }
@@ -194,6 +187,11 @@ body .imgbox img {
 }
 #welcome .bigicon i {
   color: #d4cece;
+}
+@media (min-width: 1400px) {
+  #welcome .box .textbox, #welcome .box .textbox-2 {
+    width: 44%;
+  }
 }
 @media (min-width: 1200px) {
   #welcome .box .imgbox {
@@ -208,14 +206,11 @@ body .imgbox img {
   }
 }
 @media (min-width: 768px) and (max-width: 991px) {
-  #welcome .box {
-    padding: 50px 0;
-  }
   #welcome .box .imgbox {
     width: 690px;
     height: 460px;
   }
-  #welcome .box .textbox {
+  #welcome .box .textbox, #welcome .box .textbox-2 {
     width: 100%;
   }
 }
@@ -223,6 +218,27 @@ body .imgbox img {
   #welcome .box .imgbox {
     max-width: 510px;
     max-height: 340px;
+  }
+  #welcome .box .textbox, #welcome .box .textbox-2 {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  #welcome .box .textbox {
+    padding-right: 100px;
+  }
+  #welcome .box .textbox-2 {
+    padding-left: 100px;
+  }
+}
+@media (max-width: 992px) {
+  #welcome .box {
+    padding: 30px 0;
+  }
+}
+@media (max-width: 576px) {
+  #welcome .box .textbox, #welcome .box .textbox-2 {
+    width: 100%;
   }
 }
 
