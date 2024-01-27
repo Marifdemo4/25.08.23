@@ -210,17 +210,11 @@ body .imgbox img {
     width: 690px;
     height: 460px;
   }
-  #welcome .box .textbox, #welcome .box .textbox-2 {
-    width: 100%;
-  }
 }
-@media (min-width: 576px) and (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 767px) {
   #welcome .box .imgbox {
     max-width: 510px;
     max-height: 340px;
-  }
-  #welcome .box .textbox, #welcome .box .textbox-2 {
-    width: 100%;
   }
 }
 @media (min-width: 992px) {
@@ -231,12 +225,10 @@ body .imgbox img {
     padding-left: 100px;
   }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
   #welcome .box {
     padding: 30px 0;
   }
-}
-@media (max-width: 576px) {
   #welcome .box .textbox, #welcome .box .textbox-2 {
     width: 100%;
   }
