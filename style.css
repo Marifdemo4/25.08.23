@@ -235,7 +235,7 @@ body .imgbox img {
 }
 
 #aboutus {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 #aboutus .textbox {
   width: 80%;
@@ -406,6 +406,9 @@ body .imgbox img {
 #pricing {
   padding: 50px 0;
 }
+#pricing h2, #pricing h3 {
+  text-align: center;
+}
 #pricing .textbox {
   width: 580px;
   text-align: center;
@@ -421,11 +424,10 @@ body .imgbox img {
   margin: 20px 0 50px;
 }
 #pricing .box {
-  width: 340px;
+  width: 100%;
   color: white;
-  background-color: #788f97;
+  background-color: #a2c0be;
   padding: 50px 30px;
-  text-align: center;
 }
 #pricing .box h2 {
   font-size: 25px;
@@ -436,7 +438,7 @@ body .imgbox img {
 }
 #pricing .box li {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin: 25px 0 0;
 }
 #pricing .box li h4 {
