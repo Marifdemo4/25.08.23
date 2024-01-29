@@ -543,14 +543,17 @@ body .imgbox img {
 }
 
 #blog {
-  padding: 40px 0;
+  padding: 50px 0;
 }
-#blog h1 {
+#blog .headerbox .textbox {
+  width: 50%;
+}
+#blog .headerbox .textbox h1 {
   font-weight: 700;
   font-size: 35px;
   margin: 15px 0;
 }
-#blog h3 {
+#blog .headerbox .textbox h3 {
   font-size: 20px;
   margin: 30px 0 60px;
 }
@@ -601,6 +604,9 @@ body .imgbox img {
   }
 }
 @media (max-width: 992px) {
+  #blog .headerbox .textbox {
+    width: 100%;
+  }
   #blog .box .textbox {
     width: 90%;
     margin: 20px 0;
