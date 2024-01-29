@@ -137,7 +137,7 @@ body .imgbox img {
 }
 
 #welcome {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 #welcome .mainbox .textbox {
   width: 580px;
@@ -235,10 +235,10 @@ body .imgbox img {
 }
 
 #aboutus {
-  padding: 40px 0;
+  padding: 50px 0;
 }
 #aboutus .textbox {
-  padding: 0 100px;
+  width: 80%;
 }
 #aboutus .textbox h1 {
   font-weight: 700;
@@ -270,11 +270,44 @@ body .imgbox img {
   color: #949494;
 }
 #aboutus .imgbox {
-  width: 450px;
+  width: 540px;
+  heigth: 720px;
 }
 #aboutus .bigicon i {
   font-size: 30px;
   color: #d4cece;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #aboutus .imgbox {
+    width: 450px;
+    height: 600px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #aboutus .imgbox {
+    width: 690px;
+    height: 920px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #aboutus .imgbox {
+    width: 510px;
+    height: 680px;
+  }
+}
+@media (max-width: 575px) {
+  #aboutus .imgbox {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 992px) {
+  #aboutus .box {
+    margin-bottom: 100px;
+  }
+  #aboutus .box .textbox {
+    width: 100%;
+  }
 }
 
 #trainers {

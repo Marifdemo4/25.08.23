@@ -1,7 +1,7 @@
 #aboutus
-    padding: 40px 0
+    padding: 50px 0
     .textbox
-        padding: 0 100px
+        width: 80%
         h1
             font-weight: 700
             font-size: 35px
@@ -26,8 +26,31 @@
             font-size: 20px
             color: #949494
     .imgbox
-        width: 450px
+        width: 540px
+        heigth: 720px
     .bigicon
         i
             font-size: 30px
             color: #d4cece
+    
+    @media (min-width: 992px) and (max-width: 1200px)
+        .imgbox
+            width: 450px
+            height: 600px
+    @media (min-width: 768px) and (max-width: 991px)
+        .imgbox
+            width: 690px
+            height: 920px
+    @media (min-width: 576px) and (max-width: 767px)
+        .imgbox
+            width: 510px
+            height: 680px
+    @media (max-width: 575px)
+        .imgbox
+            width: 100%
+            height: auto
+    @media  (max-width: 992px)
+        .box
+            margin-bottom: 100px
+            .textbox
+                width: 100%
