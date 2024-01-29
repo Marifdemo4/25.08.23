@@ -479,9 +479,6 @@ body .imgbox img {
   margin: 0 0 40px;
   line-height: 1.4;
 }
-#questions .textbox {
-  padding: 0 70px;
-}
 #questions .textbox h2, #questions .textbox h4 {
   font-size: 25px;
   margin: 0 0 0 10px;
@@ -510,6 +507,39 @@ body .imgbox img {
 }
 #questions .bigicon i {
   font-size: 30px;
+}
+#questions .imgbox {
+  width: 540px;
+  height: 360px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #questions .imgbox {
+    width: 450px;
+    height: 300px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #questions .imgbox {
+    width: 690px;
+    height: 460px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #questions .imgbox {
+    width: 510px;
+    height: 340px;
+  }
+}
+@media (max-width: 992px) {
+  #questions .textbox {
+    padding: 50px 0;
+  }
+}
+@media (max-width: 575px) {
+  #questions .imgbox {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #blog {
