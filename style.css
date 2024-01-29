@@ -545,9 +545,6 @@ body .imgbox img {
 #blog {
   padding: 40px 0;
 }
-#blog .box {
-  display: flex;
-}
 #blog h1 {
   font-weight: 700;
   font-size: 35px;
@@ -557,29 +554,63 @@ body .imgbox img {
   font-size: 20px;
   margin: 30px 0 60px;
 }
-#blog .textbox {
+#blog .box .textbox {
   margin: 0 0 0 20px;
 }
-#blog .textbox h2 {
+#blog .box .textbox h2 {
   font-size: 22px;
 }
-#blog .textbox h4 {
+#blog .box .textbox h4 {
   font-size: 18px;
   color: #aba8a8;
 }
-#blog .textbox p {
+#blog .box .textbox p {
   font-size: 18px;
+  line-height: 1.4;
   color: #8f8686;
 }
-#blog .textbox p, #blog .textbox h4 {
+#blog .box .textbox p, #blog .box .textbox h4 {
   margin: 20px 0 0;
-}
-#blog .wid {
-  width: 580px;
 }
 #blog .bigicon i {
   font-size: 30px;
   color: #d4cece;
+}
+@media (min-width: 1200px) {
+  #blog .imgbox {
+    max-width: 190px;
+    mmx-height: 126.66px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #blog .imgbox {
+    max-width: 190px;
+    max-height: 126.66px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #blog .imgbox {
+    width: 306px;
+    height: 204px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #blog .imgbox {
+    width: 486px;
+    height: 324px;
+  }
+}
+@media (max-width: 992px) {
+  #blog .box .textbox {
+    width: 90%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 575px) {
+  #blog .imgbox {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #services {

@@ -1,7 +1,5 @@
 #blog
     padding: 40px 0
-    .box
-        display: flex
     h1
         font-weight: 700
         font-size: 35px
@@ -9,21 +7,47 @@
     h3
         font-size: 20px
         margin: 30px 0 60px
-    .textbox
-        margin: 0 0 0 20px
-        h2
-            font-size: 22px
-        h4
-            font-size: 18px
-            color: #aba8a8
-        p
-            font-size: 18px
-            color: #8f8686
-        p,h4
-            margin: 20px 0 0
-    .wid
-        width: 580px
+    .box
+        .textbox
+            margin: 0 0 0 20px
+            h2
+                font-size: 22px
+            h4
+                font-size: 18px
+                color: #aba8a8
+            p
+                font-size: 18px
+                line-height: 1.4
+                color: #8f8686
+            p,h4
+                margin: 20px 0 0
     .bigicon
         i
             font-size: 30px
             color: #d4cece
+
+    @media (min-width: 1200px)
+        .imgbox
+            max-width: 190px
+            mmx-height: 126.66px
+    @media (min-width: 992px) and (max-width: 1200px)
+        .imgbox
+            max-width: 190px
+            max-height: 126.66px
+    @media (min-width: 768px) and (max-width: 991px)
+        .imgbox
+            width: 306px
+            height: 204px
+    @media (min-width: 576px) and (max-width: 767px)
+        .imgbox
+            width: 486px
+            height: 324px
+    @media (max-width: 992px)
+        .box
+            .textbox
+                width: 90%
+                margin: 20px 0
+    @media (max-width: 575px)
+        .imgbox
+            width: 100%
+            height: auto
