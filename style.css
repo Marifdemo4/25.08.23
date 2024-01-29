@@ -118,7 +118,7 @@ body .imgbox img {
   }
 }
 @media (max-width: 768px) {
-  #carefor .imgbox {
+  #carefor .box {
     overflow: hidden;
   }
   #carefor .textbox {
