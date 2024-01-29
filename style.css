@@ -311,53 +311,96 @@ body .imgbox img {
 }
 
 #trainers {
-  padding: 40px 0;
+  padding: 50px 0;
+  background: #a2c0be;
+  color: #567876;
 }
-#trainers h1 {
+#trainers .headerbox {
+  margin-bottom: 50px;
+}
+#trainers .headerbox h1 {
   font-weight: 700;
   font-size: 38px;
   margin: 15px 0;
 }
-#trainers h3, #trainers h4 {
+#trainers .headerbox h3 {
   font-weight: 300;
   font-size: 20px;
-  color: #a8a8a8;
+  color: #747882;
   margin: 20px 0;
   line-height: 1.4;
 }
 #trainers .box {
-  margin: 0 5px;
+  margin: 20px 5px;
+}
+#trainers .box .imgbox {
+  transition: 0.3s;
+  transition-delay: 0.2s;
+}
+#trainers .box:hover .imgbox {
+  box-shadow: 12px 12px #405a58;
 }
 #trainers .box .textbox {
-  padding: 15px;
+  margin-bottom: 50px;
 }
-#trainers .box h2 {
+#trainers .box .textbox h2 {
   font-weight: 300;
   font-size: 25px;
-  padding: 20px 0 0;
+  margin: 30px 0;
 }
-#trainers .box ul {
+#trainers .box .textbox h4 {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+#trainers .box .textbox ul {
   display: flex;
   flex-direction: row;
 }
-#trainers .box ul li {
-  margin: 0 10px;
-  background-color: #d4cece;
+#trainers .box .textbox ul li {
+  margin: 0 10px 0 0;
+  background-color: #ffffff;
   border-radius: 100%;
-  padding: 20px;
+  padding: 15px;
   width: 10px;
   height: 10px;
 }
-#trainers .box ul li .icon {
+#trainers .box .textbox ul .icon {
   margin: -7px;
 }
-#trainers .wid {
-  width: 580px;
-  padding: 0;
+#trainers .box .textbox ul .facebook {
+  padding-left: 2px;
 }
 #trainers .bigicon i {
   font-size: 30px;
-  color: #d4cece;
+  color: #ffffff;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  #trainers .headerbox .textbox {
+    width: 50%;
+  }
+  #trainers .imgbox {
+    width: 290px;
+    height: 387px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  #trainers .imgbox {
+    width: 330px;
+    height: 440px;
+  }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+  #trainers .imgbox {
+    width: 510px;
+    height: 680px;
+  }
+}
+@media (max-width: 575px) {
+  #trainers .imgbox {
+    width: 100%;
+    height: auto;
+  }
 }
 
 #pricing {
