@@ -1,5 +1,7 @@
 #carefor
     background-color: #f8f9fa
+    .box
+        height: 100%
     .textbox
         margin-right: 50px
         width: 400px
@@ -17,6 +19,10 @@
         overflow: hidden
         min-width: 450px
         height: 100%
+
+    @media (min-width: 768px)
+        .textbox
+            text-align: start
     @media (max-width: 992px)
         .imgbox
             width: 370px
@@ -25,7 +31,7 @@
                 width: 200px
                 font-size: 36px
                 line-height: 1.5
-    @media (max-width: 768px)
+    @media (max-width: 767px)
         .box
             overflow: hidden
         .textbox

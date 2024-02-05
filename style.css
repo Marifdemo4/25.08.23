@@ -86,6 +86,9 @@ body .imgbox img {
 #carefor {
   background-color: #f8f9fa;
 }
+#carefor .box {
+  height: 100%;
+}
 #carefor .textbox {
   margin-right: 50px;
   width: 400px;
@@ -107,6 +110,11 @@ body .imgbox img {
   min-width: 450px;
   height: 100%;
 }
+@media (min-width: 768px) {
+  #carefor .textbox {
+    text-align: start;
+  }
+}
 @media (max-width: 992px) {
   #carefor .imgbox {
     width: 370px;
@@ -117,7 +125,7 @@ body .imgbox img {
     line-height: 1.5;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   #carefor .box {
     overflow: hidden;
   }
