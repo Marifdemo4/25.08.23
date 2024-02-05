@@ -442,10 +442,10 @@ body .imgbox img {
   margin: 20px 0 50px;
 }
 #pricing .box {
+  padding: 16px;
   width: 100%;
   color: white;
   background-color: #a2c0be;
-  padding: 50px 30px;
 }
 #pricing .box h2 {
   font-size: 25px;
@@ -479,6 +479,11 @@ body .imgbox img {
 #pricing .bigicon i {
   font-size: 30px;
   color: #d4cece;
+}
+@media (min-width: 768px) {
+  #pricing .box {
+    padding: 50px;
+  }
 }
 
 #questions {
