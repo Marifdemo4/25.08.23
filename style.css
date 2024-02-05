@@ -160,27 +160,27 @@ body .imgbox img {
   margin: 20px 0 40px;
   font-size: 20px;
 }
-#welcome .box .textbox, #welcome .box .textbox-2 {
+#welcome .box .textbox, #welcome .box .secondtextbox {
   width: 50%;
 }
-#welcome .box .textbox h2, #welcome .box .textbox h6, #welcome .box .textbox-2 h2, #welcome .box .textbox-2 h6 {
+#welcome .box .textbox h2, #welcome .box .textbox h6, #welcome .box .secondtextbox h2, #welcome .box .secondtextbox h6 {
   margin: 15px 0;
 }
-#welcome .box .textbox h2, #welcome .box .textbox-2 h2 {
+#welcome .box .textbox h2, #welcome .box .secondtextbox h2 {
   font-size: 40px;
 }
-#welcome .box .textbox h6, #welcome .box .textbox-2 h6 {
+#welcome .box .textbox h6, #welcome .box .secondtextbox h6 {
   font-size: 20px;
   color: #80829c;
   line-height: 1.4;
 }
-#welcome .box .textbox .btn, #welcome .box .textbox-2 .btn {
+#welcome .box .textbox .btn, #welcome .box .secondtextbox .btn {
   padding: 10px 30px;
   border-radius: 20px;
   background-color: #a7b59f;
   color: white;
 }
-#welcome .box .textbox .btn h5, #welcome .box .textbox-2 .btn h5 {
+#welcome .box .textbox .btn h5, #welcome .box .secondtextbox .btn h5 {
   cursor: pointer;
 }
 #welcome .box .imgbox {
@@ -197,7 +197,7 @@ body .imgbox img {
   color: #d4cece;
 }
 @media (min-width: 1400px) {
-  #welcome .box .textbox, #welcome .box .textbox-2 {
+  #welcome .box .textbox, #welcome .box .secondtextbox {
     width: 44%;
   }
 }
@@ -228,8 +228,9 @@ body .imgbox img {
 @media (min-width: 992px) {
   #welcome .box .textbox {
     padding-right: 100px;
+    text-align: end;
   }
-  #welcome .box .textbox-2 {
+  #welcome .box .secondtextbox {
     padding-left: 100px;
   }
 }
@@ -237,7 +238,7 @@ body .imgbox img {
   #welcome .box {
     padding: 30px 0;
   }
-  #welcome .box .textbox, #welcome .box .textbox-2 {
+  #welcome .box .textbox, #welcome .box .secondtextbox {
     width: 100%;
   }
 }
