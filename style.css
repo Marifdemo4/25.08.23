@@ -246,45 +246,48 @@ body .imgbox img {
 #aboutus {
   padding: 100px 0;
 }
-#aboutus .textbox {
+#aboutus .box {
+  height: 100%;
+}
+#aboutus .box .textbox {
   width: 80%;
 }
-#aboutus .textbox h1 {
+#aboutus .box .textbox h1 {
   font-weight: 700;
   font-size: 35px;
   margin: 15px 0;
 }
-#aboutus .textbox h3, #aboutus .textbox p {
+#aboutus .box .textbox h3, #aboutus .box .textbox p {
   color: #a8a8a8;
   font-weight: 100;
   font-size: 20px;
   margin: 20px 0 0;
   line-height: 1.6;
 }
-#aboutus .textbox p {
+#aboutus .box .textbox p {
   font-size: 18px;
   color: #949494;
   line-height: 1.4;
 }
-#aboutus .textbox li {
+#aboutus .box .textbox li {
   display: flex;
   padding: 20px 0 0 0;
 }
-#aboutus .textbox .icon {
+#aboutus .box .textbox .icon {
   padding: 0 15px 0 0;
   color: #5e5656;
 }
-#aboutus .textbox h4 {
+#aboutus .box .textbox h4 {
   font-size: 20px;
   color: #949494;
+}
+#aboutus .box .textbox .bigicon i {
+  font-size: 30px;
+  color: #d4cece;
 }
 #aboutus .imgbox {
   width: 540px;
   heigth: 720px;
-}
-#aboutus .bigicon i {
-  font-size: 30px;
-  color: #d4cece;
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #aboutus .imgbox {
