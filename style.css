@@ -489,9 +489,6 @@ body .imgbox img {
 #questions {
   padding: 40px 0;
 }
-#questions .wid {
-  width: 580px;
-}
 #questions h1 {
   font-weight: 700;
   font-size: 36px;
@@ -671,9 +668,6 @@ body .imgbox img {
 }
 #services .textbox .icon i {
   font-size: 60px;
-}
-#services .wid {
-  width: 580px;
 }
 #services .bigicon i {
   font-size: 30px;
