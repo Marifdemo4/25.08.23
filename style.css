@@ -480,6 +480,12 @@ body .imgbox img {
   font-size: 30px;
   color: #d4cece;
 }
+@media (min-width: 576px) and (max-width: 992px) {
+  #pricing .professionalbox {
+    margin-top: 16px;
+    transform: translateX(50%);
+  }
+}
 @media (min-width: 768px) {
   #pricing .box {
     padding: 50px;
