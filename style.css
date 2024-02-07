@@ -160,35 +160,44 @@ body .imgbox img {
   margin: 20px 0 40px;
   font-size: 20px;
 }
-#welcome .box .textbox, #welcome .box .secondtextbox {
+#welcome .box, #welcome .secondbox {
+  display: flex;
+}
+#welcome .box .textbox, #welcome .box .secondtextbox, #welcome .secondbox .textbox, #welcome .secondbox .secondtextbox {
   width: 50%;
 }
-#welcome .box .textbox h2, #welcome .box .textbox h6, #welcome .box .secondtextbox h2, #welcome .box .secondtextbox h6 {
+#welcome .box .textbox h2, #welcome .box .textbox h6, #welcome .box .secondtextbox h2, #welcome .box .secondtextbox h6, #welcome .secondbox .textbox h2, #welcome .secondbox .textbox h6, #welcome .secondbox .secondtextbox h2, #welcome .secondbox .secondtextbox h6 {
   margin: 15px 0;
 }
-#welcome .box .textbox h2, #welcome .box .secondtextbox h2 {
+#welcome .box .textbox h2, #welcome .box .secondtextbox h2, #welcome .secondbox .textbox h2, #welcome .secondbox .secondtextbox h2 {
   font-size: 40px;
 }
-#welcome .box .textbox h6, #welcome .box .secondtextbox h6 {
+#welcome .box .textbox h6, #welcome .box .secondtextbox h6, #welcome .secondbox .textbox h6, #welcome .secondbox .secondtextbox h6 {
   font-size: 20px;
   color: #80829c;
   line-height: 1.4;
 }
-#welcome .box .textbox .btn, #welcome .box .secondtextbox .btn {
+#welcome .box .textbox .btn, #welcome .box .secondtextbox .btn, #welcome .secondbox .textbox .btn, #welcome .secondbox .secondtextbox .btn {
   padding: 10px 30px;
   border-radius: 20px;
   background-color: #a7b59f;
   color: white;
 }
-#welcome .box .textbox .btn h5, #welcome .box .secondtextbox .btn h5 {
+#welcome .box .textbox .btn h5, #welcome .box .secondtextbox .btn h5, #welcome .secondbox .textbox .btn h5, #welcome .secondbox .secondtextbox .btn h5 {
   cursor: pointer;
 }
-#welcome .box .imgbox {
+#welcome .box .imgbox, #welcome .secondbox .imgbox {
   transition: 0.3s;
   transition-delay: 0.2s;
 }
-#welcome .box .imgbox:hover {
+#welcome .box .imgbox:hover, #welcome .secondbox .imgbox:hover {
   box-shadow: 12px 12px #a2c0be;
+}
+#welcome .box {
+  flex-direction: column-reverse;
+}
+#welcome .secondbox {
+  flex-direction: column;
 }
 #welcome .bigicon {
   font-size: 30px;
@@ -226,11 +235,14 @@ body .imgbox img {
   }
 }
 @media (min-width: 992px) {
-  #welcome .box .textbox {
+  #welcome .box, #welcome .secondbox {
+    flex-direction: row;
+  }
+  #welcome .box .textbox, #welcome .secondbox .textbox {
     padding-right: 100px;
     text-align: end;
   }
-  #welcome .box .secondtextbox {
+  #welcome .box .secondtextbox, #welcome .secondbox .secondtextbox {
     padding-left: 100px;
   }
 }
@@ -583,6 +595,10 @@ body .imgbox img {
   font-size: 20px;
   margin: 30px 0 60px;
 }
+#blog .box {
+  display: flex;
+  flex-direction: column;
+}
 #blog .box .textbox {
   margin: 0 0 0 20px;
 }
@@ -604,12 +620,6 @@ body .imgbox img {
 #blog .bigicon i {
   font-size: 30px;
   color: #d4cece;
-}
-@media (min-width: 1200px) {
-  #blog .imgbox {
-    max-width: 190px;
-    mmx-height: 126.66px;
-  }
 }
 @media (min-width: 992px) and (max-width: 1200px) {
   #blog .imgbox {
@@ -642,6 +652,11 @@ body .imgbox img {
   #blog .imgbox {
     width: 100%;
     height: auto;
+  }
+}
+@media (min-width: 992px) {
+  #blog .box {
+    flex-direction: row;
   }
 }
 

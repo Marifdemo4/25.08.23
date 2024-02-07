@@ -11,7 +11,8 @@
                 color: #868686
                 margin: 20px 0 40px
                 font-size: 20px
-    .box
+    .box,.secondbox
+        display: flex
         .textbox,.secondtextbox
             width: 50%
             h2,h6
@@ -34,6 +35,10 @@
             transition-delay: 0.2s
             &:hover
                 box-shadow: 12px 12px #a2c0be
+    .box
+        flex-direction: column-reverse
+    .secondbox
+        flex-direction: column
     .bigicon
         font-size: 30px
         i
@@ -65,7 +70,8 @@
                 max-width: 510px
                 max-height: 340px   
     @media (min-width: 992px)
-        .box
+        .box,.secondbox
+            flex-direction: row
             .textbox
                 padding-right: 100px
                 text-align: end
